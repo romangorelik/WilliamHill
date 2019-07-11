@@ -19,7 +19,9 @@ body {
 nav {
   width: 100%;
   height: 75px;
-  background-color: black;
+  background-image: linear-gradient(#006BB6, black);
+  box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+  min-height: 100%;
   padding-left: 30px;
   padding-right: 10px;
 }

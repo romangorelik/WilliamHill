@@ -9,9 +9,9 @@ function Header ({teamLogo, teamName}) {
           <img src={teamLogo} alt='NYK logo'/>
         </div>
         <ul className='navLinks'>
-          <li><a href='#stadium'> Stadium </a></li>
-          <li><a href='#players'> Players </a></li>
-          <li><a href='#social'> Social </a></li>
+          <li><a href='#stadium' onclick="return false;"> Stadium </a></li>
+          <li><a href='#players' onclick="return false;"> Players </a></li>
+          <li><a href='#social' onclick="return false;"> Social </a></li>
         </ul>
       </nav>
     </React.Fragment>
