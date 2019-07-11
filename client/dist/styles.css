@@ -118,6 +118,50 @@ nav {
   text-decoration: none;
 }
 
+.feedStory > a:hover,
+.feedStory > a:active {
+  color: #006BB6;
+}
+
+/*  TeamInfo  */
+
+.teamInfoContainer {
+  padding-top: 10px;
+  background: black;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.infoContainer {
+  margin-right: 70px;
+}
+
+#team {
+  width: 200px;
+  padding-top: 50px;
+
+}
+
+.teamName {
+  color: #F58426;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.descriptionContainer {
+  padding-top: 20px;
+  width: 70%;
+  height: 400px;
+}
+
+.teamDescription {
+  color: white;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*  Footer  */
 
 .footerContainer {

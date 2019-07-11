@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './Header.jsx'
 import Banner from './Banner.jsx'
 import NewsFeed from './NewsFeed.jsx'
+import TeamInfo from './TeamInfo.jsx'
+import Stadium from './Stadium.jsx'
 import Footer from './Footer.jsx'
 
 import axios from 'axios'
@@ -43,6 +45,17 @@ class App extends React.Component {
         <Header teamLogo={this.state.allInfo.strTeamBadge} teamName={this.state.allInfo.strTeam}/>
         <Banner stadiumImage={this.state.allInfo.strStadiumThumb}/>
         <NewsFeed />
+        <TeamInfo 
+          teamName={this.state.allInfo.strTeam}
+          teamDescription={this.state.allInfo.strDescriptionEN}
+          teamLogo={this.state.allInfo.strTeamBadge}
+        />
+        <Stadium 
+          stadiumName={this.state.allInfo.strStadium}
+          stadiumDescription={this.state.allInfo.strStadiumDescription}
+          stadiumLocation={this.state.allInfo.strStadiumLocation}
+          stadiumCapacity={this.state.allInfo.intStadiumCapacity}
+        />
         <Footer 
           teamWebsite={this.state.allInfo.strWebsite}
           teamFacebook={this.state.allInfo.strFacebook}
