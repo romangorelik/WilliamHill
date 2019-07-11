@@ -3,7 +3,9 @@ import React from 'react'
 function Banner ({stadiumImage}) {
   return (
     <React.Fragment>
-      <img  className='stadiumImageContainer' src={stadiumImage}/>
+      <div class='bannerContainer'>
+        <img className='stadiumImage' src={stadiumImage}/>
+      </div>
     </React.Fragment>
   )
 }

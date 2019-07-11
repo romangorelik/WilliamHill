@@ -19,6 +19,10 @@ class App extends React.Component {
     } else {
       this.pullInformation()
     }
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
   }
 
   pullInformation = () => {
