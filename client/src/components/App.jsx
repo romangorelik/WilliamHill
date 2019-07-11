@@ -1,4 +1,8 @@
 import React from 'react'
+import Header from './Header.jsx'
+import Banner from './Banner.jsx'
+
+
 import axios from 'axios'
 
 class App extends React.Component {
@@ -31,8 +35,8 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        {console.log(this.state.allInfo)}
-        {console.log(localStorage)}
+        <Header teamLogo={this.state.allInfo.strTeamBadge}/>
+        <Banner stadiumImage={this.state.allInfo.strStadiumThumb}/>
       </div>
     )
   }
