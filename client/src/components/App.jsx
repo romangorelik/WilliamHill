@@ -55,6 +55,7 @@ class App extends React.Component {
           stadiumDescription={this.state.allInfo.strStadiumDescription}
           stadiumLocation={this.state.allInfo.strStadiumLocation}
           stadiumCapacity={this.state.allInfo.intStadiumCapacity}
+          stadiumImage={this.state.allInfo.strStadiumThumb}
         />
         <Footer 
           teamWebsite={this.state.allInfo.strWebsite}
