@@ -9,6 +9,10 @@ app.use(bodyParser.json())
 app.use(morgan('dev'))
 app.use(express.static(__dirname + '/client/dist/'))
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/dist/')
+)})
+
 app.get('/knicks', (req, res) => {
   axios.get('https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=new_york_knicks')
     .then(response => {
@@ -16,11 +20,5 @@ app.get('/knicks', (req, res) => {
     })
     .catch(err => console.error(err))
 })
-
-app.use(express.static(__dirname + '/client/dist/'))
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/dist/')
-)})
 
 app.listen(4000, () => {console.log('Listening to port 4000!')})

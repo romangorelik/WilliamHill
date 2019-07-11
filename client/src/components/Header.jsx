@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Header ({teamLogo}) {
+function Header ({teamLogo, teamName}) {
   return (
     <React.Fragment>
       <nav className='navBar'>
         <div className='logo'>
-          <h1> New York Knicks </h1>
+          <h1> {teamName} </h1>
           <img src={teamLogo} alt='NYK logo'/>
         </div>
         <ul className='navLinks'>
