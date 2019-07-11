@@ -10,7 +10,7 @@ function Header ({teamLogo, teamName}) {
         </div>
         <ul className='navLinks'>
           <li><a href='#stadium'> Stadium </a></li>
-          <li><a href='#players'> Players </a></li>
+          <li><a href='#team'> Team </a></li>
           <li><a href='#social'> Social </a></li>
         </ul>
       </nav>
