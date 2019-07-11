@@ -24,7 +24,6 @@
    render () {
      return (
        <div className='feedContainer'>
-         {console.log(this.state.recentNews)}
          <marquee behavior="scroll" direction="right" scrollamount="10">
             {this.state.recentNews.map((news, index)=> {
               return (
