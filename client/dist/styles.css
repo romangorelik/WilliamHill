@@ -160,6 +160,7 @@ nav {
   color: white;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
+  text-align: right;
 }
 
 /*  Stadium  */
@@ -214,6 +215,7 @@ nav {
   font-size: 15px;
   width: 70%;
   padding-top: 20px;
+  text-align: justify;
 }
 
 /*  Footer  */
